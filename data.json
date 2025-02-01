@@ -4,104 +4,104 @@
     "name": "Фильтр масляный",
     "category": "Двигатель",
     "price": "500 руб.",
-    "image": "https://via.placeholder.com/150?text=Oil+Filter"
+    "image": "https://cdn1.ozone.ru/s3/multimedia-2/6010990586.jpg"
   },
   {
     "id": 2,
     "name": "Тормозные колодки",
     "category": "Тормозная система",
     "price": "1200 руб.",
-    "image": "https://via.placeholder.com/150?text=Brake+Pads"
+    "image": "https://avatars.mds.yandex.net/get-mpic/5032583/img_id293361554375694369.jpeg/orig"
   },
   {
     "id": 3,
     "name": "Амортизатор передний",
     "category": "Подвеска",
     "price": "2500 руб.",
-    "image": "https://via.placeholder.com/150?text=Shock+Absorber"
+    "image": "https://bibuy.ru/image/cache/import/shopntoys/3014.original-1000x1000.jpg"
   },
   {
     "id": 4,
     "name": "Лампа галогенная",
     "category": "Электрика",
     "price": "300 руб.",
-    "image": "https://via.placeholder.com/150?text=Halogen+Lamp"
+    "image": "https://avatars.mds.yandex.net/i?id=3c16214cc5a23688a34491797764b955_l-12530428-images-thumbs&n=13"
   },
   {
     "id": 5,
     "name": "Свечи зажигания",
     "category": "Двигатель",
     "price": "800 руб.",
-    "image": "https://via.placeholder.com/150?text=Spark+Plugs"
+    "image": "https://cdn1.ozone.ru/s3/multimedia-a/6195762394.jpg"
   },
   {
     "id": 6,
     "name": "Ремень ГРМ",
     "category": "Двигатель",
     "price": "1500 руб.",
-    "image": "https://via.placeholder.com/150?text=Timing+Belt"
+    "image": "https://main-cdn.sbermegamarket.ru/hlr-system/-10/233/191/405/232/09/100063080857b0.jpg"
   },
   {
     "id": 7,
     "name": "Аккумулятор",
     "category": "Электрика",
     "price": "4000 руб.",
-    "image": "https://via.placeholder.com/150?text=Battery"
+    "image": "https://zavgar.ru/uploads/catalog_items/images/4545/2573.jpeg"
   },
   {
     "id": 8,
     "name": "Стеклоочистители",
     "category": "Кузов",
     "price": "600 руб.",
-    "image": "https://via.placeholder.com/150?text=Wipers"
+    "image": "https://pubimg.nodacdn.net/images/1096c61d3decb99898990ac37e08fb9e05.jpeg"
   },
   {
     "id": 9,
     "name": "Масло моторное",
     "category": "Двигатель",
     "price": "1000 руб.",
-    "image": "https://via.placeholder.com/150?text=Engine+Oil"
+    "image": "https://cdn1.ozone.ru/s3/multimedia-7/6094833799.jpg"
   },
   {
     "id": 10,
     "name": "Диски тормозные",
     "category": "Тормозная система",
     "price": "3000 руб.",
-    "image": "https://via.placeholder.com/150?text=Brake+Discs"
+    "image": "https://avatars.mds.yandex.net/i?id=29fc29087e1a8e72c80afbed58aa4399f9705de7-3941326-images-thumbs&n=13"
   },
   {
     "id": 11,
     "name": "Радиатор охлаждения",
     "category": "Двигатель",
     "price": "5000 руб.",
-    "image": "https://via.placeholder.com/150?text=Radiator"
+    "image": "https://cdn1.ozone.ru/s3/multimedia-c/6012968940.jpg"
   },
   {
     "id": 12,
     "name": "Шины летние",
     "category": "Колеса",
     "price": "3500 руб.",
-    "image": "https://via.placeholder.com/150?text=Summer+Tires"
+    "image": "https://rezina43.ru/uploads/62/62e066efef773353719241-62e066fdc29bc791810674.jpg"
   },
   {
     "id": 13,
     "name": "Шины зимние",
     "category": "Колеса",
     "price": "4000 руб.",
-    "image": "https://via.placeholder.com/150?text=Winter+Tires"
+    "image": "https://banner2.cleanpng.com/20180509/wye/kisspng-tread-snow-tire-bridgestone-siping-new-back-shaped-tread-pattern-5af28860e52a39.5054591715258440649387.jpg"
   },
   {
     "id": 14,
     "name": "Дворники бескаркасные",
     "category": "Кузов",
     "price": "700 руб.",
-    "image": "https://via.placeholder.com/150?text=Wiper+Blades"
+    "image": "https://cdn1.ozone.ru/s3/multimedia-5/6639969965.jpg"
   },
   {
     "id": 15,
     "name": "Фара передняя",
     "category": "Кузов",
     "price": "2000 руб.",
-    "image": "https://via.placeholder.com/150?text=Headlight"
+    "image": "https://fdauto.ru/img_parts/full/ad197c6c92119acb0eb7c291cbc14195.jpg"
   }
 ]
