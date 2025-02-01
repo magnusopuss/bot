@@ -4,27 +4,27 @@
     "name": "Фильтр масляный",
     "category": "Двигатель",
     "price": "500 руб.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Oil+Filter"
   },
   {
     "id": 2,
     "name": "Тормозные колодки",
     "category": "Тормозная система",
     "price": "1200 руб.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Brake+Pads"
   },
   {
     "id": 3,
     "name": "Амортизатор передний",
     "category": "Подвеска",
     "price": "2500 руб.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Shock+Absorber"
   },
   {
     "id": 4,
     "name": "Лампа галогенная",
     "category": "Электрика",
     "price": "300 руб.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Halogen+Lamp"
   }
 ]
