@@ -31,10 +31,11 @@ main {
   text-align: center;
 }
 
+/* Используем CSS Grid для двух рядов */
 #productList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два столбца */
+  gap: 20px; /* Расстояние между карточками */
   justify-content: center;
 }
 
@@ -43,9 +44,10 @@ main {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  width: 180px; /* Уменьшаем ширину для мобильных устройств */
+  width: 180px; /* Ширина карточки */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Центрируем карточки */
 }
 
 .product-card img {
