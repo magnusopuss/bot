@@ -38,7 +38,7 @@ function renderProducts(list) {
       <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p class="price">${product.price}</p>
-      <button onclick="addToCart(${product.id})">+</button>
+      <button onclick="addToCart(${product.id}, event)">+</button>
     `;
 
     productList.appendChild(card);
@@ -46,7 +46,7 @@ function renderProducts(list) {
 }
 
 // Добавление товара в корзину
-function addToCart(productId) {
+function addToCart(productId, event) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
 
@@ -59,6 +59,19 @@ function addToCart(productId) {
   }
 
   updateCart();
+
+  // Анимация отправки товара в корзину
+  const buttonRect = event.target.getBoundingClientRect();
+  const animationItem = document.createElement('div');
+  animationItem.classList.add('animation-item');
+  animationItem.textContent = '+';
+  animationItem.style.top = `${buttonRect.top}px`;
+  animationItem.style.left = `${buttonRect.left}px`;
+  document.getElementById('animationContainer').appendChild(animationItem);
+
+  setTimeout(() => {
+    animationItem.remove();
+  }, 1000);
 }
 
 // Обновление корзины
@@ -84,6 +97,7 @@ function updateCart() {
     cartItem.innerHTML = `
       <span>${item.name} (${item.quantity} шт.)</span>
       <span>${itemTotal} руб.</span>
+      <button class="remove-button" onclick="removeFromCart(${item.id})">-</button>
     `;
     cartItemsContainer.appendChild(cartItem);
   });
@@ -91,6 +105,20 @@ function updateCart() {
   // Обновляем общую сумму и счетчик товаров
   totalPriceElement.textContent = `${total} руб.`;
   cartCountElement.textContent = cart.length > 0 ? cart.length : '';
+}
+
+// Удаление товара из корзины
+function removeFromCart(productId) {
+  const index = cart.findIndex(item => item.id === productId);
+  if (index === -1) return;
+
+  if (cart[index].quantity > 1) {
+    cart[index].quantity -= 1; // Уменьшаем количество
+  } else {
+    cart.splice(index, 1); // Удаляем товар полностью
+  }
+
+  updateCart();
 }
 
 // Поиск товаров
