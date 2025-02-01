@@ -1,3 +1,18 @@
+// Проверка, запущено ли приложение в Telegram Web App
+if (window.Telegram && window.Telegram.WebApp) {
+  const tg = window.Telegram.WebApp;
+
+  // Настройка заголовка Web App
+  tg.setHeaderColor("#333");
+  tg.setBackgroundColor("#f4f4f4");
+
+  // Получение данных о пользователе
+  const user = tg.initDataUnsafe?.user;
+  if (user) {
+    console.log("Пользователь:", user);
+  }
+}
+
 // Загрузка данных из JSON
 let products = [];
 
