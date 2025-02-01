@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
 }
 
 header {
@@ -14,11 +15,12 @@ header {
 }
 
 header input {
-  width: 80%;
+  width: 90%;
   padding: 10px;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 main {
@@ -41,7 +43,7 @@ main {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  width: 200px;
+  width: 180px; /* Уменьшаем ширину для мобильных устройств */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -49,8 +51,8 @@ main {
 .product-card img {
   width: 150px;
   height: 150px;
-  object-fit: cover; /* Картинка заполняет квадрат */
-  border-radius: 10px; /* Скругленные углы */
+  object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
@@ -62,7 +64,7 @@ main {
 .product-card p.price {
   font-size: 18px;
   font-weight: bold;
-  color: #e74c3c; /* Цвет цены */
+  color: #e74c3c;
 }
 
 footer {
@@ -70,7 +72,5 @@ footer {
   padding: 10px;
   background-color: #333;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  position: relative; /* Убираем fixed, чтобы footer не мешал в Web App */
 }
