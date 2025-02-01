@@ -20,11 +20,14 @@
     </section>
   </main>
 
-  <!-- Корзина -->
-  <div id="cart" class="cart">
-    <div class="cart-header">
-      <h3>Корзина</h3>
-    </div>
+  <!-- Иконка корзины -->
+  <div id="cartIcon" class="cart-icon">
+    🛒<span id="cartCount">0</span>
+  </div>
+
+  <!-- Страница корзины (скрыта по умолчанию) -->
+  <div id="cartPage" class="cart-page hidden">
+    <h2>Корзина</h2>
     <div id="cartItems" class="cart-items">
       <!-- Товары будут добавляться сюда -->
     </div>
@@ -32,6 +35,7 @@
       <p>Сумма: <span id="totalPrice">0 руб.</span></p>
     </div>
     <button id="checkoutButton" class="checkout-button">Оплатить</button>
+    <button id="backButton" class="back-button">Назад</button>
   </div>
 
   <footer>
