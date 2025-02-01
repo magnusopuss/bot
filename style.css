@@ -40,4 +40,61 @@
   height: 100%;
   background-color: white;
   z-index: 1000;
-  padding:
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.cart-page.hidden {
+  display: none;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cart-total {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-button:hover {
+  background-color: #c0392b;
+}
+
+.back-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #222;
+}
