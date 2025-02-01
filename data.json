@@ -4,27 +4,104 @@
     "name": "Фильтр масляный",
     "category": "Двигатель",
     "price": "500 руб.",
-    "image": "https://media.istockphoto.com/id/1837648713/ru/фото/три-новых-масляных-фильтра.jpg?s=1024x1024&w=is&k=20&c=i6fJOIER2fQploFep9jCvnwVHJY1rgnB02p6PbeWNGo="
+    "image": "https://via.placeholder.com/150?text=Oil+Filter"
   },
   {
     "id": 2,
     "name": "Тормозные колодки",
     "category": "Тормозная система",
     "price": "1200 руб.",
-    "image": "https://media.istockphoto.com/id/183260268/ru/фото/полный-набор-тормозные-диски-и-накладки.jpg?s=1024x1024&w=is&k=20&c=lja_LaZGmgRMKkgMQJGaAHTdI0J8vzVb_ys-Qx07TYk="
+    "image": "https://via.placeholder.com/150?text=Brake+Pads"
   },
   {
     "id": 3,
     "name": "Амортизатор передний",
     "category": "Подвеска",
     "price": "2500 руб.",
-    "image": "https://media.istockphoto.com/id/1284268887/ru/фото/пара-автомобильных-амортизаторов-с-пружинами-компоненты-подвески.jpg?s=1024x1024&w=is&k=20&c=MikxuW6hAn7U54rgftsCcovJsb-NafrXiWCDKY72JHQ="
+    "image": "https://via.placeholder.com/150?text=Shock+Absorber"
   },
   {
     "id": 4,
     "name": "Лампа галогенная",
     "category": "Электрика",
     "price": "300 руб.",
-    "image": "https://media.istockphoto.com/id/480727856/ru/фото/автомобиль-лампа.jpg?s=1024x1024&w=is&k=20&c=D7UhpPJkZtM8ktTz7I7DWxVTJvfd0gkZho4I2UAVfq0="
+    "image": "https://via.placeholder.com/150?text=Halogen+Lamp"
+  },
+  {
+    "id": 5,
+    "name": "Свечи зажигания",
+    "category": "Двигатель",
+    "price": "800 руб.",
+    "image": "https://via.placeholder.com/150?text=Spark+Plugs"
+  },
+  {
+    "id": 6,
+    "name": "Ремень ГРМ",
+    "category": "Двигатель",
+    "price": "1500 руб.",
+    "image": "https://via.placeholder.com/150?text=Timing+Belt"
+  },
+  {
+    "id": 7,
+    "name": "Аккумулятор",
+    "category": "Электрика",
+    "price": "4000 руб.",
+    "image": "https://via.placeholder.com/150?text=Battery"
+  },
+  {
+    "id": 8,
+    "name": "Стеклоочистители",
+    "category": "Кузов",
+    "price": "600 руб.",
+    "image": "https://via.placeholder.com/150?text=Wipers"
+  },
+  {
+    "id": 9,
+    "name": "Масло моторное",
+    "category": "Двигатель",
+    "price": "1000 руб.",
+    "image": "https://via.placeholder.com/150?text=Engine+Oil"
+  },
+  {
+    "id": 10,
+    "name": "Диски тормозные",
+    "category": "Тормозная система",
+    "price": "3000 руб.",
+    "image": "https://via.placeholder.com/150?text=Brake+Discs"
+  },
+  {
+    "id": 11,
+    "name": "Радиатор охлаждения",
+    "category": "Двигатель",
+    "price": "5000 руб.",
+    "image": "https://via.placeholder.com/150?text=Radiator"
+  },
+  {
+    "id": 12,
+    "name": "Шины летние",
+    "category": "Колеса",
+    "price": "3500 руб.",
+    "image": "https://via.placeholder.com/150?text=Summer+Tires"
+  },
+  {
+    "id": 13,
+    "name": "Шины зимние",
+    "category": "Колеса",
+    "price": "4000 руб.",
+    "image": "https://via.placeholder.com/150?text=Winter+Tires"
+  },
+  {
+    "id": 14,
+    "name": "Дворники бескаркасные",
+    "category": "Кузов",
+    "price": "700 руб.",
+    "image": "https://via.placeholder.com/150?text=Wiper+Blades"
+  },
+  {
+    "id": 15,
+    "name": "Фара передняя",
+    "category": "Кузов",
+    "price": "2000 руб.",
+    "image": "https://via.placeholder.com/150?text=Headlight"
   }
 ]
