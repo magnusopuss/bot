@@ -47,9 +47,22 @@ main {
 }
 
 .product-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Картинка заполняет квадрат */
+  border-radius: 10px; /* Скругленные углы */
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.product-card p.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c; /* Цвет цены */
 }
 
 footer {
