@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durango Autoparts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durango - Магазин автозапчастей</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Магазин автозапчастей Durango</h1>
-    </div>
-    <div class="container">
-        <h2>Поиск запчастей</h2>
-        <input type="text" id="searchInput" placeholder="Введите марку автомобиля...">
-        <button onclick="searchParts()">Найти</button>
-        <div id="results"></div>
-    </div>
+  <header>
+    <h1>Магазин автозапчастей Durango</h1>
+    <input type="text" id="searchInput" placeholder="Поиск по каталогу..." oninput="searchProducts()">
+  </header>
 
-    <script>
-        function searchParts() {
-            const query = document.getElementById('searchInput').value;
-            if (query) {
-                // Здесь можно добавить AJAX-запрос к вашему API для поиска запчастей
-                document.getElementById('results').innerHTML = `<p>Вы искали: ${query}</p>`;
-            } else {
-                alert('Введите запрос!');
-            }
-        }
-    </script>
+  <main>
+    <section id="catalog">
+      <h2>Каталог товаров</h2>
+      <div id="productList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Durango. Все права защищены.</p>
+  </footer>
+
+  <script src="data.json" type="application/json"></script>
+  <script src="script.js"></script>
 </body>
 </html>
