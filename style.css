@@ -1,78 +1,57 @@
-/* Общие стили */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-header input {
-  width: 90%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-main {
-  padding: 20px;
-}
-
-#catalog h2 {
-  text-align: center;
-}
-
-/* Используем CSS Grid для двух рядов */
-#productList {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Два столбца */
-  gap: 20px; /* Расстояние между карточками */
-  justify-content: center;
-}
-
-.product-card {
+/* Корзина */
+.cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: 180px; /* Ширина карточки */
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Центрируем карточки */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.product-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
+.cart-header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.product-card h3 {
-  font-size: 16px;
-  margin: 5px 0;
+.cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.product-card p.price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #e74c3c;
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
 }
 
-footer {
+.cart-total {
   text-align: center;
-  padding: 10px;
-  background-color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: #e74c3c;
   color: white;
-  position: relative; /* Убираем fixed, чтобы footer не мешал в Web App */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-button:hover {
+  background-color: #c0392b;
 }
