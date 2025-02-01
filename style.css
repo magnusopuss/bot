@@ -1,3 +1,151 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f4f4f9, #e0e0ff);
+  color: #333;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+header input {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+header input:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#catalog h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Стили для карточек товаров */
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.product-card p.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 5px 0;
+}
+
+.product-card button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #27ae60;
+}
+
+/* Иконка корзины */
+.cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 1001; /* Убедимся, что иконка поверх всех слоев */
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-icon span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: white;
+  color: #e74c3c;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Анимация отправки товаров в корзину */
 #animationContainer {
   position: fixed;
@@ -34,7 +182,81 @@
   }
 }
 
-/* Кнопка удаления товара */
+/* Страница корзины */
+.cart-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.cart-page.hidden {
+  display: none;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkout-button {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.checkout-button:hover {
+  transform: scale(1.05);
+}
+
+.back-button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
 .remove-button {
   background-color: #e74c3c;
   color: white;
@@ -50,4 +272,12 @@
 
 .remove-button:hover {
   transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  position: relative;
 }
