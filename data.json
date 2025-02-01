@@ -11,20 +11,20 @@
     "name": "Тормозные колодки",
     "category": "Тормозная система",
     "price": "1200 руб.",
-    "image": "https://via.placeholder.com/150?text=Brake+Pads"
+    "image": "https://media.istockphoto.com/id/183260268/ru/фото/полный-набор-тормозные-диски-и-накладки.jpg?s=1024x1024&w=is&k=20&c=lja_LaZGmgRMKkgMQJGaAHTdI0J8vzVb_ys-Qx07TYk="
   },
   {
     "id": 3,
     "name": "Амортизатор передний",
     "category": "Подвеска",
     "price": "2500 руб.",
-    "image": "https://via.placeholder.com/150?text=Shock+Absorber"
+    "image": "https://media.istockphoto.com/id/1284268887/ru/фото/пара-автомобильных-амортизаторов-с-пружинами-компоненты-подвески.jpg?s=1024x1024&w=is&k=20&c=MikxuW6hAn7U54rgftsCcovJsb-NafrXiWCDKY72JHQ="
   },
   {
     "id": 4,
     "name": "Лампа галогенная",
     "category": "Электрика",
     "price": "300 руб.",
-    "image": "https://via.placeholder.com/150?text=Halogen+Lamp"
+    "image": "https://media.istockphoto.com/id/480727856/ru/фото/автомобиль-лампа.jpg?s=1024x1024&w=is&k=20&c=D7UhpPJkZtM8ktTz7I7DWxVTJvfd0gkZho4I2UAVfq0="
   }
 ]
